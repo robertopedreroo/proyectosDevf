@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  width: 100vw;
+  height: 170vh;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  height: 75px;
+  background-color: red;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  width: 95%;
+}
+
+.columnas {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: calc(100vh - 75px);
+}
+
+.contenedor-imagen {
+  position: relative;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  border-radius: 15px;
+  margin: 10px;
+  width: 100%;
+}
+
+.img1:hover {
+  filter: grayscale(90%);
+}
+
+.img2:hover {
+  filter: grayscale(90%);
+}
+
+.img3:hover {
+  filter: grayscale(90%);
+}
+
+.img4:hover {
+  filter: grayscale(90%);
+}
+
+
+.texto1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 35px;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  /* Inicialmente, el texto estará oculto */
+  transition: opacity 0.3s;
+}
+
+
+
+.img1:hover .texto1 {
+  color: white;
+}
+
+.img2:hover .texto1 {
+  color: white;
+}
+
+.img3:hover .texto1 {
+  color: white;
+}
+
+.img4:hover .texto1 {
+  color: white;
+}
+
+.texto1:hover {
+  opacity: 1;
+  /* Muestra el texto cuando el ratón está sobre el contenedor */
+}
+
+.textoabajo {
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, +120%);
+  /* Inicialmente, el texto estará oculto */
+  transition: opacity 0.3s;
+}
+
+
+.img1:hover .textoabajo{
+  color: white;
+}
+
+
+.textoabajo:hover{
+  opacity: 1;
+  /* Muestra el texto cuando el ratón está sobre el contenedor */
+}
+
+.nav-item{
+  margin-left: 20px;
+}
+
+.form-control{
+  border-radius: 50px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 80px;
+}
